@@ -1,0 +1,44 @@
+{
+ "name": "jonatasfenske/router",
+ "description": "Roteamento MVC PHP 8.5 com atributos #[Route], Rate Limiting, CORS automático, Error Handlers e validação tipada de parâmetros",
+ "type": "library",
+ "license": "MIT",
+ "keywords": ["php85", "router", "mvc", "routing", "middleware", "cors", "rate-limiting", "attributes"],
+ "homepage": "https://github.com/jonatasfenske/router",
+ "authors": [
+ {
+ "name": "Robson V. Leite",
+ "email": "cursos@upinside.com.br",
+ "role": "Original Author"
+ },
+ {
+ "name": "Jonatas Fenske",
+ "role": "PHP 8.5 Modernization"
+ }
+ ],
+ "require": {
+ "php": ">=8.5"
+ },
+ "require-dev": {
+ "phpunit/phpunit": "^12.0",
+ "phpstan/phpstan": "^2.0"
+ },
+ "autoload": {
+ "psr-4": {
+ "JonatasFenske\\Router\\": "src/"
+ }
+ },
+ "autoload-dev": {
+ "psr-4": {
+ "JonatasFenske\\Router\\Tests\\": "tests/"
+ }
+ },
+ "scripts": {
+ "test": "phpunit",
+ "analyse": "phpstan analyse --no-progress"
+ },
+ "config": {
+ "sort-packages": true
+ },
+ "minimum-stability": "stable"
+}
